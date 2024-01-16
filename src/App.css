@@ -1,34 +1,74 @@
-.App{padding: 40px;}.done {
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  border: 5px solid rgb(199, 238, 225);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  margin: 40px;
+}
+.title {
+  margin-left: -80%;
+}
+.done {
   text-decoration: line-through;
 }
-
+.donetext {
+  margin-left: -80%;
+}
 .todo-item {
-  display: flex;align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .sub-todo-item {
-  display: flex;align-items: center;
-
-
+  display: flex;
+  align-items: center;
 }
 
 .input {
   height: 30px;
   border: 1px solid#cccc;
   border-radius: 5px;
-  padding: 5px;
-
+  padding: 10px;
+  color: rgba(16, 185, 129);
 }
-.button{
+.input:hover,
+.input:focus,
+.input:active {
+  border: 1px solid rgba(16, 185, 129);
+}
+input::placeholder {
+  color: rgba(16, 185, 129);
+  font-size: 1.2em;
+}
+.button {
   height: 40px;
+  width: 60px;
   border: 1px solid#cccc;
   border-radius: 5px;
   padding: 5px;
   margin-left: 10px;
+  background-color: rgba(16, 185, 129);
 }
-.button-denger{
-  background-color: #ff0000;color: #ffffff;
+.button:focus,
+.button:hover {
+  background-color: rgb(9, 103, 72);
 }
-.button-success{
-  background-color: #00ff2f;color: #ffffff;
+.button-danger {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+.button-danger:focus,
+.button-danger:hover {
+  background-color: #e65353;
+}
+.button-success {
+  background-color: rgb(33, 243, 33);
+  color: #ffffff;
 }
